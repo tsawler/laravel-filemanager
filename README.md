@@ -1,3 +1,5 @@
+[![Latest Stable Version](https://poser.pugx.org/tsawler/laravel-filemanager/v/stable)](https://packagist.org/packages/tsawler/laravel-filemanager) [![Total Downloads](https://poser.pugx.org/tsawler/laravel-filemanager/downloads)](https://packagist.org/packages/tsawler/laravel-filemanager) [![Latest Unstable Version](https://poser.pugx.org/tsawler/laravel-filemanager/v/unstable)](https://packagist.org/packages/tsawler/laravel-filemanager) [![License](https://poser.pugx.org/tsawler/laravel-filemanager/license)](https://packagist.org/packages/tsawler/laravel-filemanager)
+
 # laravel-filemanager
 
 ### This package is functional, but is under active development.
