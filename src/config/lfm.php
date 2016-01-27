@@ -2,6 +2,7 @@
 
 return [
     'use_package_routes' => true,
+    'middleware' => 'auth',
 
     'images_dir'         => 'public/vendor/laravel-filemanager/images/',
     'images_url'         => '/vendor/laravel-filemanager/images/',
