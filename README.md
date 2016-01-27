@@ -31,9 +31,17 @@ following command:
 
     `composer update`
 
-1. Add the ServiceProvider to the providers array in config/app.php:
+1. Add the following to the providers array in config/app.php:
 
-    `'Tsawler\Laravelfilemanager\LaravelFilemanagerServiceProvider',`
+    ```
+    Tsawler\Laravelfilemanager\LaravelFilemanagerServiceProvider::class,
+    Intervention\Image\ImageServiceProvider::class
+    ```
+    
+1. Add this to the aliases section in config/app.php
+    
+    `'Image'     => Intervention\Image\Facades\Image::class,`
+
 
 1. Publish the package's config file:
 
