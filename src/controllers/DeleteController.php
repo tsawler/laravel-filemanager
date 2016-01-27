@@ -1,6 +1,6 @@
 <?php namespace Tsawler\Laravelfilemanager\controllers;
 
-use App\Http\Controllers\Controller;
+use Tsawler\Laravelfilemanager\controllers\Controller;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Input;
@@ -98,5 +98,5 @@ class DeleteController extends Controller {
             }
         }
     }
-    
+
 }
