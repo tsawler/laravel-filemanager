@@ -2,9 +2,9 @@
 
 # laravel-filemanager
 
-### This package is functional, but is under active development.
+### This package does not yet work with Laravel 5.2, and will not until laravelcollective/html is updated 
 
-A file upload/editor intended for use with [Laravel 5](http://www.laravel.com/ "Title") and [CKEditor](http://ckeditor.com/).
+A file upload/editor intended for use with [Laravel 5.0/5.1](http://www.laravel.com/ "Title") and [CKEditor](http://ckeditor.com/).
 
 ## Rationale
 
@@ -16,8 +16,9 @@ This package is written specifically for Laravel 5, and will integrate seamlessl
 
 ## Requirements
 
-1. This package only supports Laravel 5.x
+1. This package only supports Laravel 5.0 and 5.1. Support for 5.2 will come when laravelcollective/html is updated for 5.2.
 1. Requires `"intervention/image": "2.*"`
+1. Requres `"laravelcollective/html": "5.1.*"`
 1. Requires PHP 5.5 or later
 
 ## Installation
