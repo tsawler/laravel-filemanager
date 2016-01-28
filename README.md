@@ -14,7 +14,7 @@ This package is written specifically for Laravel 5, and will integrate seamlessl
 
 ## Requirements
 
-1. This package only supports Laravel 5.0 and 5.1. Support for 5.2 will come when laravelcollective/html is updated for 5.2.
+1. This package only supports Laravel 5.x.
 1. Requires `"intervention/image": "2.*"`
 1. Requres `"laravelcollective/html": "5.2.*"`
 1. Requires PHP 5.5 or later
