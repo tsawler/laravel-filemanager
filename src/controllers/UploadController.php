@@ -19,12 +19,19 @@ class UploadController extends Controller {
      */
     protected $file_location;
 
+    /**
+     * @var
+     */
+    protected $allowed_types;
+
 
     /**
      * constructor
      */
     function __construct()
     {
+        $this->allowed_types = Config::get('lfm.allowed_file_types');
+
         if (Session::get('lfm_type') == "Images")
             $this->file_location = Config::get('lfm.images_dir');
         else
@@ -55,13 +62,20 @@ class UploadController extends Controller {
             $working_dir = Input::get('working_dir');
             $destinationPath = base_path() . "/" . $this->file_location;
 
+            $extension = $file->getClientOriginalExtension();
+
+            if(!empty($this->allowed_types["Images"]) && !in_array($extension, $this->allowed_types["Images"]))
+            {
+                return "File type is not allowed!";
+                exit;
+            }
+
             if (strlen($working_dir) > 1)
             {
                 $destinationPath .= $working_dir . "/";
             }
 
             $filename = $file->getClientOriginalName();
-            $extension = $file->getClientOriginalExtension();
 
             $new_filename = Str::slug(str_replace($extension, '', $filename)) . "." . $extension;
 
@@ -84,13 +98,20 @@ class UploadController extends Controller {
             $working_dir = Input::get('working_dir');
             $destinationPath = base_path() . "/" . $this->file_location;
 
+            $extension = $file->getClientOriginalExtension();
+
+            if(!empty($this->allowed_types["Files"]) && !in_array($extension, $this->allowed_types["Files"]))
+            {
+                return "File type is not allowed!";
+                exit;
+            }
+
             if (strlen($working_dir) > 1)
             {
                 $destinationPath .= $working_dir . "/";
             }
 
             $filename = $file->getClientOriginalName();
-            $extension = $file->getClientOriginalExtension();
 
             $new_filename = Str::slug(str_replace($extension, '', $filename)) . "." . $extension;
 

@@ -10,6 +10,15 @@ return [
     'files_dir'          => 'public/vendor/laravel-filemanager/files/',
     'files_url'          => '/vendor/laravel-filemanager/files/',
 
+    'allowed_file_types'    => [
+        // Allowed file types.
+        // Leave empty to authorize all types.
+        "Files" => [],
+        // Allowed image types.
+        // Leave empty to authorize all types.
+        "Images" => ["jpg", "jpeg", "png", "gif"]
+    ],
+
     'file_type_array'         => [
         "pdf"  => "Adobe Acrobat",
         "docx" => "Microsoft Word",
