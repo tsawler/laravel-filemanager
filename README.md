@@ -34,7 +34,7 @@ following command:
 
     ```
     Tsawler\Laravelfilemanager\LaravelFilemanagerServiceProvider::class,
-    Intervention\Image\ImageServiceProvider::class.
+    Intervention\Image\ImageServiceProvider::class,
     Collective\Html\HtmlServiceProvider::class,
     ```
     
