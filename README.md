@@ -105,8 +105,8 @@ simply wrap the routes in a group, perhaps like this:
 
     Route::group(array('before' => 'auth'), function ()
     {
-        Route::get('/laravel-filemanager', 'Tsawler\Laravelfilemanager\controllers\LfmController@show');
-        Route::post('/laravel-filemanager/upload', 'Tsawler\Laravelfilemanager\controllers\LfmController@upload');
+        Route::get('/laravel-filemanager', '\Tsawler\Laravelfilemanager\controllers\LfmController@show');
+        Route::post('/laravel-filemanager/upload', '\Tsawler\Laravelfilemanager\controllers\LfmController@upload');
         // list all lfm routes here...
     });
     
